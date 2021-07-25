@@ -11,6 +11,7 @@ let calculateTip = () => {
     }
     //Check to see if this input is empty or less than or equal to 1
     if (numOfPeople === "" || numOfPeople <= 1) {
+        numOfPeople = 1;
         document.getElementById("each").style.display = "none";
     } else {
         document.getElementById("each").style.display = "block";
@@ -25,6 +26,7 @@ let calculateTip = () => {
     //Display the tip
     document.getElementById("totalTip").style.display = "block";
     document.getElementById("tip").innerHTML = total;
+
 }
 
 //Hide the tip amount on load
